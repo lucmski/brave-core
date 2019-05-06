@@ -280,7 +280,7 @@ By installing this extension, you are agreeing to the Google Widevine Terms of U
         Global Defaults
       </message>
       <message name="IDS_SETTINGS_BRAVE_SHIELDS_DEFAULTS_DESCRIPTION" desc="The description for Brave shields Defaults sub-section in settings">
-        These are the default Shields settings for new seites. Changing these won't affect your existing per-site settings.
+        These are the default Shields settings for new sites. Changing these won't affect your existing per-site settings.
       </message>
       <message name="IDS_SETTINGS_SOCIAL_BLOCKING_DEFAULTS_TITLE" desc="The title the settings section which has options for blocking third-party embeds, commonly from social media sites">
         Social media blocking
