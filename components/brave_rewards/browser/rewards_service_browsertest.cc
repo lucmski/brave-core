@@ -200,6 +200,8 @@ void BraveURLFetcher::RunDelegate() {
 
 }  // namespace brave_net
 
+namespace brave_rewards {
+
 class BraveRewardsBrowserTest :
     public InProcessBrowserTest,
     public brave_rewards::RewardsServiceObserver,
@@ -1586,7 +1588,7 @@ IN_PROC_BROWSER_TEST_F(BraveRewardsBrowserTest,
     VisitPublisher("google.com", !verified, 2, true);
   }
 
-  rewards_service_->SetContributionAmountForTesting(50.0);
+  rewards_service_->SetContributionAmount(50.0);
 
   CheckInsufficientFundsForTesting();
   WaitForInsufficientFundsNotification();
@@ -1623,7 +1625,7 @@ IN_PROC_BROWSER_TEST_F(BraveRewardsBrowserTest,
     VisitPublisher("bumpsmack.com", verified, 1);
     VisitPublisher("google.com", !verified, 2, true);
   }
-  rewards_service_->SetContributionAmountForTesting(100.0);
+  rewards_service_->SetContributionAmount(100.0);
 
   rewards_service_->CheckInsufficientFundsForTesting();
   WaitForInsufficientFundsNotification();
@@ -1644,3 +1646,4 @@ IN_PROC_BROWSER_TEST_F(BraveRewardsBrowserTest,
   EXPECT_TRUE(notification_shown);
 }
 
+}  // namespace brave_rewards

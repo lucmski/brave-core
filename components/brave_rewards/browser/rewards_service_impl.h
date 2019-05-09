@@ -219,6 +219,8 @@ class RewardsServiceImpl : public RewardsService,
       base::OnceCallback<void(bool)> callback);
 
  private:
+  friend class BraveRewardsBrowserTest;
+  FRIEND_TEST_ALL_PREFIXES(BraveRewardsBrowserTest, GetContributionAmount);
   friend class RewardsServiceTest;
   FRIEND_TEST_ALL_PREFIXES(RewardsServiceTest, OnWalletProperties);
 

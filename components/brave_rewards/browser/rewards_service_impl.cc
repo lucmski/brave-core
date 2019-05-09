@@ -1729,10 +1729,6 @@ void RewardsServiceImpl::SetContributionAmount(double amount) const {
   bat_ledger_->SetContributionAmount(amount);
 }
 
-void RewardsServiceImpl::SetContributionAmountForTesting(double amount) const {
-  SetContributionAmount(amount);
-}
-
 // TODO(brave): Remove me (and pure virtual definition)
 // see https://github.com/brave/brave-core/commit/c4ef62c954a64fca18ae83ff8ffd611137323420#diff-aa3505dbf36b5d03d8ba0751e0c99904R385
 // and https://github.com/brave-intl/bat-native-ledger/commit/27f3ceb471d61c84052737ff201fe18cb9a6af32#diff-e303122e010480b2226895b9470891a3R135
